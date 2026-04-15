@@ -1,0 +1,220 @@
+* {
+    box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between; 
+  flex-direction: row; 
+            
+}
+
+
+
+header {
+    background-color: #000;
+    color: #fff;
+    height: 60px;
+    padding: 20px 40px;
+}
+
+body {
+    margin: 0;
+    line-height: 1.4;
+    font-family:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #fff; 
+}
+
+.wrapper{
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 20px;
+   
+}
+
+#hero {
+    height: 600px; 
+    background-image: url(../images/hands-typing.jpg); 
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    filter: grayscale(70%); 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+#hero h1 {
+    
+    background-color: rgba( 0, 0, 0,  0.5);
+    color: #fff;
+    text-shadow: #000 2px 2px;
+    text-align: center;
+    max-width: 60%;
+}
+
+.about {
+    display: flex;
+    padding-top: 20px;
+    gap: 20px;
+    align-items: flex-end;
+
+}
+
+.about-text {
+    flex: 2;
+}
+
+.about-image {
+    flex: 1;
+}
+
+    
+.about img {
+    width: 40%;
+    height: auto;
+}
+
+ p {
+    max-width: 600px;
+    line-height: 1.6;
+ }
+
+
+#work img {
+    width: 100%;
+    display: block;  
+    object-fit: cover; 
+    aspect-ratio: 1 / 1;
+}
+
+
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 25px;
+    
+
+    
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    gap: 20px;
+}
+
+#services h2 {
+    text-align: center;
+    background-color: #fafafa;
+    padding: 20px;
+  
+}
+.skills {
+    display: grid;
+    background-color: #fafafa;
+    padding: 30px;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    
+}
+
+.skills div {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 1em;
+    
+}
+
+.skills div h3 {
+    margin-bottom: auto;
+}
+
+.skills div p {
+    padding-bottom: 2px;
+}
+
+.skills a:link, .skills a:visited {
+    display: inline-block;
+    padding: 1em 1em;
+    background-color: #000;
+    border: 2px solid #000;
+    color: #fff;
+    border-radius: 4px;
+    margin-top: auto;
+}
+
+.skills a {
+    margin-top: auto;
+}
+
+.skills a:hover {
+    background-color: white;
+    color: #000;    
+}
+
+
+#work .images {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    grid-template-areas: 
+    "img1 img1 img1 img2 img2 img2"
+    "img3 img3 img4 img4 img5 img5";
+   
+}
+
+#work .images img:nth-child(1) {
+    grid-area: img1;
+}
+
+#work .images img:nth-child(2) {
+    grid-area: img2;
+}
+
+#work .images img:nth-child(3) {
+    grid-area: img3;
+}
+
+#work .images img:nth-child(4) {
+    grid-area: img4;
+}
+
+#work .images img:nth-child(5) {
+    grid-area: img5;
+}
+
+#work h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 50px;
+}
+
+#work p {
+    max-width: 700px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    
+}
+
+.my-work {
+    max-width: 940px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
